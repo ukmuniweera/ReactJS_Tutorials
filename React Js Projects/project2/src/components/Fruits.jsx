@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 
 export default function Fruits() {    
-    var fruits=["Apple","orange","grapes","woodapple"];
+    var fruits=["Apple","Orange","Grapes","Woodapple","Mango"];
     const [index,setIndex] = useState(0);
     const prev =()=>{
         if(index<1){
