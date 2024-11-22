@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Content() {
+export default function Content(props) {
   return (
     <div>
-        <p>This is Content</p>
+        <ul>
+            <li>{props.no} | {props.item}</li>
+        </ul>
         <hr />
     </div>
   )

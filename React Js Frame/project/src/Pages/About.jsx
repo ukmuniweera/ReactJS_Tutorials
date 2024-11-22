@@ -8,8 +8,10 @@ export default function About() {
     <div>
         <h1>About</h1>
         <Header/>
-        <Content/>
-        <Footer/>
+        <Content item="About" no="2"/>
+        <Footer>
+          <span>Located to About page</span>
+        </Footer>
     </div>
   )
 }

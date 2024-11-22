@@ -8,8 +8,10 @@ export default function Profile() {
     <div>
         <h1>Profile</h1>
         <Header/>
-        <Content/>
-        <Footer/>
+        <Content item="Profile" no="3"/>
+        <Footer>
+          <span>Located to Profile page</span>
+        </Footer>
     </div>
   )
 }

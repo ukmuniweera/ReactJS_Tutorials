@@ -14,6 +14,7 @@ export default function Header() {
         <button onClick={()=>navigate("/Profile")}>
             Profile
         </button>
+        <hr />
     </div>
   );
 }
