@@ -6,7 +6,7 @@ export default function Body(){
     return(
         <div>
             <h2>List of famous people</h2>
-            {people.map(item=><People details={item}></People>)}
+            {people.map(item=><People props={item}></People>)}
         </div>
     );
 }

@@ -1,16 +1,16 @@
 import React from 'react';
 import '../assets/css/main.css';
 
-export default function People({details}){
+export default function People({props}){
     return(
         <div className="maincard">
             <div className="profile">
-                <img src={'https://i.imgur.com/'+details.imageId+'s.jpg'} alt={details.name} />
+                <img src={'https://i.imgur.com/'+props.imageId+'s.jpg'} alt={details.name} />
             </div>
             <div className="details">
-                <p>{details.name}</p>
-                <p>{details.profession}</p>
-                <p>{details.accomplishment}</p>
+                <p>{props.name}</p>
+                <p>{props.profession}</p>
+                <p>{props.accomplishment}</p>
             </div>
         </div>
     );

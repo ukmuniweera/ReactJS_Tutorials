@@ -1,11 +1,9 @@
-import {sculptureList} from './components/data';
-import SculpureViewer from './components/SculptureViewer';
-
+import Fruits from "./components/Fruits";
 
 function App() {
   return (
     <div>
-      {sculptureList.map(item=><SculpureViewer details={item}></SculpureViewer>)}
+      <Fruits/>
     </div>
   );
 }
