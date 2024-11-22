@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Footer(props) {
-    return (
+export default function Footer(){
+    return(
         <div>
             <hr />
-            {props.children}
+            <h4>UoV@2024</h4>
         </div>
     );
 }
