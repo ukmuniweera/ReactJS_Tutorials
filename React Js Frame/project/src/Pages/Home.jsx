@@ -1,8 +1,7 @@
-import React from 'react';
 import Header from '../Components/Header';
 import Content from '../Components/Content';
 import Footer from '../Components/Footer';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
@@ -20,6 +19,10 @@ export default function Home() {
   const reset=()=>{
     setCount(count=0);
   }
+
+  useEffect(()=>{
+    console.log('New count: ',{count});
+  },[count])
 
   return (
     <div>
