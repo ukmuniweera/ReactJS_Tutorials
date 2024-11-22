@@ -5,6 +5,7 @@ export default function Header() {
     const navigate = useNavigate();
   return (
     <div>
+        <hr />
         <button onClick={()=> navigate("/")}>
             Home
         </button>
@@ -14,7 +15,6 @@ export default function Header() {
         <button onClick={()=>navigate("/Profile")}>
             Profile
         </button>
-        <hr />
     </div>
   );
 }
