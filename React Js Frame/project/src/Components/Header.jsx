@@ -1,10 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
+    const navigate = useNavigate();
   return (
     <div>
-        <p>This is Header</p>
-        <hr />
+        <button onClick={()=> navigate("/")}>
+            Home
+        </button>
+        <button onClick={() => navigate("/About")}>
+            About
+        </button>
+        <button onClick={()=>navigate("/Profile")}>
+            Profile
+        </button>
     </div>
-  )
+  );
 }

@@ -7,6 +7,7 @@ import Profile from './Pages/Profile';
 function App() {
   return (
     <div>
+      <h1>Welcome!</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
