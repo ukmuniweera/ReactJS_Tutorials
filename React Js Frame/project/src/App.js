@@ -1,22 +1,19 @@
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import TopicBox from './components/TopicBox';
-import Content from './components/Content';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Profile from './Pages/Profile';
 
 function App() {
   return (
     <div>
-      <Router>
-      <div>
+      <BrowserRouter>
         <Routes>
-          <Route path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/About" element={<About/>}></Route>
+          <Route path="/Profile" element={<Profile/>}></Route>
         </Routes>
-      </div>
-    </Router>
+      </BrowserRouter>
     </div>
   );
 }
